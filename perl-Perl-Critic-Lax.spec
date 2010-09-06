@@ -1,5 +1,5 @@
 %define upstream_name    Perl-Critic-Lax
-%define upstream_version 0.007
+%define upstream_version 0.008
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -26,7 +26,6 @@ reasonable, maybe there's a Lax policy. If there isn't, send one in!
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -41,8 +40,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes LICENSE META.yml README
+%doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
