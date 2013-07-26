@@ -1,2 +1,4 @@
+removed_sources:
+  Perl-Critic-Lax-0.008.tar.gz: f5e01aeb41417f0f89963393873e12fdc138d9a4
 sources:
-  "Perl-Critic-Lax-0.008.tar.gz": f5e01aeb41417f0f89963393873e12fdc138d9a4
+  Perl-Critic-Lax-0.009.tar.gz: dba4c3e23bf67ea4eb1d109238cabceb5d98abbe
