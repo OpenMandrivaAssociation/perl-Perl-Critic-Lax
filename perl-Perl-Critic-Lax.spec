@@ -1,15 +1,15 @@
 %define upstream_name    Perl-Critic-Lax
-%define upstream_version 0.009
+%define upstream_version 0.010
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.009
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Policies that let you slide on common exceptions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-Critic-Lax-0.009.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-Critic-Lax-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Perl::Critic)
@@ -51,5 +51,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Fri Aug 27 2010 Jérôme Quelin <jquelin@mandriva.org> 0.7.0-1mdv2011.0
 + Revision: 573475
 - import perl-Perl-Critic-Lax
+
 
 
