@@ -1,15 +1,15 @@
 %define upstream_name    Perl-Critic-Lax
-%define upstream_version 0.010
+%define upstream_version 0.014
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Policies that let you slide on common exceptions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Perl/Perl-Critic-Lax-%{upstream_version}.tar.gz
+Url:		https://github.com/rjbs/Perl-Critic-Lax
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Perl-Critic-Lax-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
