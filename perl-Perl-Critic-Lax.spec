@@ -1,15 +1,13 @@
 %define upstream_name    Perl-Critic-Lax
-%define upstream_version 0.014
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.014
+Release:	2
 
 Summary:	Policies that let you slide on common exceptions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Perl-Critic-Lax
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Perl-Critic-Lax-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Perl-Critic-Lax-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ but find that you often violate it in a specific way that seems pretty darn
 reasonable, maybe there's a Lax policy. If there isn't, send one in!
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
